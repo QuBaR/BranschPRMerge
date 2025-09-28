@@ -23,12 +23,12 @@ git status
 Skapa **egen branch** (ersätt med ditt namn utan å/ä/ö och specialtecken):
 
 ```bash
-git checkout -b feature/<FörnamnEfternamn>
+git checkout -b feature/<FornamnEfternamn>
 ```
 
 Skapa **egen klassfil** i mappen `Students/`:
 
-* Filnamn: `Students/<FörnamnEfternamn>.cs`
+* Filnamn: `Students/<FornamnEfternamn>.cs`
 * Exempel:
 
 ```csharp
@@ -46,7 +46,7 @@ Commit:
 
 ```bash
 git add .
-git commit -m "Add <FörnamnEfternamn> class in Students/"
+git commit -m "Add <FornamnEfternamn> class in Students/"
 ```
 
 ## 3) Synka med senaste `master` via **merge** och pusha
@@ -56,17 +56,17 @@ Uppdatera din lokala `master` och **merga** in i din feature-branch:
 ```bash
 git checkout master
 git pull origin master           # hämta senaste master
-git checkout feature/<FörnamnEfternamn>
+git checkout feature/<FornamnEfternamn>
 git merge master                 # MERGE (ingen rebase)
 # …lös ev. konflikter, redigera filer…
 git add .
 git commit                     # avsluta mergens commit om konflikter fanns
-git push -u origin feature/<FörnamnEfternamn>
+git push -u origin feature/<FornamnEfternamn>
 ```
 
 Skapa **Pull Request (PR)** på GitHub:
 
-* Titel: `Add <FörnamnEfternamn> class`
+* Titel: `Add <FornamnEfternamn> class`
 * Beskriv kort vad du lagt till.
 * Kontrollera att PR:en är “able to merge” (inga konflikter).
 
@@ -80,7 +80,7 @@ Städa lokalt (valfritt):
 ```bash
 git checkout master
 git pull origin master
-git branch -d feature/<FörnamnEfternamn>
+git branch -d feature/<FornamnEfternamn>
 git fetch -p
 ```
 
@@ -93,7 +93,7 @@ När första PR:en är mergad och branchen raderad, går nästa elev igenom steg
 ## Regler för att undvika konflikter
 
 * **Endast en ny fil** per elev i `Students/`—rör inte andras filer.
-* **Unikt filnamn & klassnamn**: `<FörnamnEfternamn>.cs`.
+* **Unikt filnamn & klassnamn**: `<FornamnEfternamn>.cs`.
 * **Alltid** `git pull origin master` på `master` och **merge** `master` in i din branch **före** PR.
 
 ---
@@ -106,7 +106,7 @@ När första PR:en är mergad och branchen raderad, går nästa elev igenom steg
   ```bash
   git checkout master
   git pull origin master
-  git checkout feature/<FörnamnEfternamn>
+  git checkout feature/<FornamnEfternamn>
   git merge master
   git push
   ```
@@ -119,14 +119,4 @@ När första PR:en är mergad och branchen raderad, går nästa elev igenom steg
   git push
   ```
 * **Fel filnamn/tecken**
-  Byt till exakt `Students/<FörnamnEfternamn>.cs` (inga å/ä/ö/specialtecken).
-
----
-
-## Godkänt när
-
-* Egen branch skapad och pushad.
-* PR skapad, grön (mergable) och mergad till `master`.
-* Branch raderad efter merge.
-
-Vill du att jag adderar en **.github/pull_request_template.md** och en `.gitignore` för .NET åt dig också?
+  Byt till exakt `Students/<FornamnEfternamn>.cs` (inga å/ä/ö/specialtecken).
