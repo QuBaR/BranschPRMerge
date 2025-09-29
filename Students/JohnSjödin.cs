@@ -1,9 +1,8 @@
 ﻿namespace BranschPRMerge.Students
 {
-    public static class RobertJansz
+    internal class JohnSjödin
     {
-        public static string Name => "Robert Jansz";
+        public static string Name => "John Sjödin";
         public static string SayHello() => $"Hej från {Name}!";
-
     }
 }
