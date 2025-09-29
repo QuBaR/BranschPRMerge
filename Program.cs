@@ -3,9 +3,9 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace BranschPRMerge
+namespace BranschPRMerge // Root namespace
 {
-    internal class Program // Entry point of the application
+    internal class Program 
     {
         static void Main(string[] args)
         {
