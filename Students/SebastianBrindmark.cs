@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BranschPRMerge.Students
 {
-    internal class SebastianBrindmark
+    public static class SebastianBrindmark
     {
+        public static string Name => "Sebastian Brindmark";
+        public static string SayHello() => $"Hej från {Name}!";
     }
 }
