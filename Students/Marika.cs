@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BranschPRMerge
+namespace BranschPRMerge.Students
 {
     internal class Marika
     {
