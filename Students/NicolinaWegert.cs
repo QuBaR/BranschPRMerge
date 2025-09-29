@@ -1,7 +1,8 @@
-namespace Students;
-
-public static class NicolinaWegert
+namespace BranschPRMerge.Students
 {
-    public static string Name => "Nicolina Wegert";
-    public static string SayHello() => $"Hej från {Name}!";
+    public static class NicolinaWegert
+    {
+        public static string Name => "Nicolina Wegert";
+        public static string SayHello() => $"Hej från {Name}!";
+    }
 }
